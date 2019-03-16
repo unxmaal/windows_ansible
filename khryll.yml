@@ -1,0 +1,9 @@
+---
+
+- name: setup for khryll
+  hosts: all
+  tasks:
+  - import_role:
+      name: common_apps
+  - import_role:
+      name: updates

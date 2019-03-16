@@ -1,0 +1,7 @@
+- name: install multiple packages
+  win_chocolatey:
+    name: '{{ item }}'
+    state: present
+  with_items:
+  - steam
+  - firefox
